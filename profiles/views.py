@@ -26,7 +26,7 @@ class CreateProfileView(View):
         if submitted_form.is_valid():
             store_file(request.FILES["image"])
             return HttpResponseRedirect("/profiles")
-        
+
         return render(request, "profiles/create_profile.html", {
             "form": submitted_form
         })
