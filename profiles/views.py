@@ -28,7 +28,6 @@ class ProfilesView(ListView):
     context_object_name = "profiles"
 
 
-<<<<<<< HEAD
 # class CreateProfileView(View):
 #     def get(self, request):
 #         form = ProfileForm()
@@ -48,12 +47,11 @@ class ProfilesView(ListView):
 #         return render(request, "profiles/create_profile.html", {
 #             "form": submitted_form
 #         })
-=======
-        if submitted_form.is_valid():
-            store_file(request.FILES["image"])
-            return HttpResponseRedirect("/profiles")
 
-        return render(request, "profiles/create_profile.html", {
-            "form": submitted_form
-        })
->>>>>>> 434b78287502b5e8758250d21401d1ab79453cd3
+    #    if submitted_form.is_valid():
+    #         store_file(request.FILES["image"])
+    #         return HttpResponseRedirect("/profiles")
+
+    #     return render(request, "profiles/create_profile.html", {
+    #         "form": submitted_form
+    #     })
